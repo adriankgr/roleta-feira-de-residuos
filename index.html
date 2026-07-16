@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roleta ARISB-MG</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="brand-panel" aria-label="ARISB-MG">
+        <img src="logo-azul.png" alt="ARISB-MG" class="brand-logo" />
+        <div class="event-copy">
+          <p class="eyebrow">FEIRA MINEIRA DE RESÍDUOS 2026</p>
+          <h1>ROLETA DE BRINDES</h1>
+        </div>
+      </section>
+
+      <section class="wheel-stage" aria-label="Roleta de premiação">
+        <div class="wheel-wrap">
+          <div class="pointer" aria-hidden="true"></div>
+          <div class="wheel" id="wheel">
+            <div class="wheel-labels" id="wheelLabels" aria-hidden="true"></div>
+            <div class="wheel-center">
+              <img src="logo-azul.png" alt="" aria-hidden="true" />
+            </div>
+          </div>
+        </div>
+
+        <div class="result-card" id="resultCard" aria-live="polite">
+          <span class="result-kicker" id="resultKicker">Pronto</span>
+          <strong id="resultTitle">Boa sorte!</strong>
+        </div>
+
+        <div class="actions">
+          <button class="spin-button" id="spinButton" type="button">Girar</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
